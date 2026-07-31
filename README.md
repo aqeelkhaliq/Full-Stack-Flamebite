@@ -65,7 +65,7 @@ graph LR
 | **Font Awesome** | 6.7.2 | Professional icon library |
 | **Google Fonts** | Poppins | Modern typography |
 
-### Backend Infrastructure
+ Backend Infrastructure
 
 graph TD
     A[Express.js] --> B[JWT Auth]
@@ -188,7 +188,7 @@ User → Login Form → Express API
 
  🌐 API Reference
 
-### Authentication Endpoints
+ Authentication Endpoints
 
 | Method | Endpoint | Auth | Description |
 | :--- | :--- | :--- | :--- |
@@ -422,7 +422,7 @@ For queries, support, or collaboration:
 
 - 📧 **Email:** aqeel.khalique2584@gmail.com
 - 🐙 **GitHub:** [aqeelkhaliq](https://github.com/aqeelkhaliq)
-- 📱 **LinkedIn:** [[Your LinkedIn URL](https://www.linkedin.com/in/aqeel-khaliq-385a25382/)]
+- 📱 **LinkedIn:** [linkedin.com/in/aqeel-khaliq-385a25382]
 
 ---
 
