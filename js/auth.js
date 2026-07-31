@@ -69,42 +69,69 @@ function updateNavbar() {
     }
 }
 
+// ---------- PROTECT PAGE ----------
 function protectPage() {
     const page = window.location.pathname.split('/').pop();
+    const isLogged = isLoggedIn();
+    const user = getCurrentUser();
 
+    //  If on login or register page
     if (page === 'login.html' || page === 'register.html') {
-        if (isLoggedIn()) {
-            const user = getCurrentUser();
-            window.location.href = (user && user.role === 'admin') ? '../admin/index.html' : 'dashboard.html';
+        if (isLogged && user) {
+            if (user.role === 'admin') {
+                window.location.href = '../admin/index.html';
+            } else {
+                window.location.href = 'dashboard.html';
+            }
         }
         return;
     }
 
-    const protectedPages = ['dashboard.html', 'profile.html', 'orders.html', 'settings.html', 'cart.html', 'checkout.html', 'favorites.html'];
-    if (protectedPages.includes(page)) {
-        if (!isLoggedIn()) {
-            showToast('Please login first', 'error');
-            setTimeout(() => {
-                window.location.href = 'login.html';
-            }, 1000);
-        }
-        return;
-    }
-
+    // If on admin page (index.html in admin folder)
     if (window.location.pathname.includes('/admin/')) {
-        if (!isLoggedIn()) {
+        //  Check if user is logged in
+        if (!isLogged) {
             showToast('Please login as admin', 'error');
             setTimeout(() => {
                 window.location.href = '../pages/login.html';
             }, 1000);
             return;
         }
-        if (!isAdmin()) {
+        //  Check if user is admin
+        if (user && user.role !== 'admin') {
             showToast('Admin access only', 'error');
             setTimeout(() => {
-                window.location.href = '../pages/dashboard.html';
+                window.location.href = '../pages/login.html';
             }, 1000);
+            return;
         }
+        // Admin is allowed, stay on page
+        return;
+    }
+
+    //  Protected user pages
+    const protectedPages = ['dashboard.html', 'profile.html', 'orders.html', 
+                            'settings.html', 'cart.html', 'checkout.html', 
+                            'favorites.html'];
+
+    if (protectedPages.includes(page)) {
+        if (!isLogged) {
+            showToast('Please login first', 'error');
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 1000);
+            return;
+        }
+        //  If admin tries to access user dashboard, redirect to admin
+        if (user && user.role === 'admin') {
+            window.location.href = '../admin/index.html';
+        }
+        return;
+    }
+
+    // Home page (allow everyone)
+    if (page === 'index.html') {
+        return;
     }
 }
 
