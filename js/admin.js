@@ -13,15 +13,27 @@ function checkAdmin() {
     const user = getCurrentUser();
     console.log(' Admin check:', user);
     
-    if (!user || user.role !== 'admin') {
+    //  Check if user exists
+    if (!user) {
+        console.log(' No user found, redirecting to login');
         window.location.href = 'login.html';
         return false;
     }
     
+    // Check if user is admin
+    if (user.role !== 'admin') {
+        console.log(' User is not admin (role: ' + user.role + '), redirecting to login');
+        window.location.href = 'login.html';
+        return false;
+    }
+    
+    //  Admin is valid, display name
     const nameEl = document.getElementById('adminName');
     if (nameEl) {
         nameEl.textContent = user.full_name || user.username || 'Admin';
     }
+    
+    console.log(' Admin verified: ' + user.email);
     return true;
 }
 
