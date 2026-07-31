@@ -1,10 +1,10 @@
-#  FlameBite – Full Stack Restaurant Management System
+  FlameBite – Full Stack Restaurant Management System
 
-## 📋 Project Overview
+ 📋 Project Overview
 
-**FlameBite** is a comprehensive, production-ready restaurant management platform that seamlessly bridges the gap between customers and restaurant operations. Built with a modern tech stack, it delivers an exceptional user experience for both diners and administrators.
+FlameBite is a comprehensive, production-ready restaurant management platform that seamlessly bridges the gap between customers and restaurant operations. Built with a modern tech stack, it delivers an exceptional user experience for both diners and administrators.
 
-### 🎯 Key Highlights
+🎯 Key Highlights
 
 - ✅ **Complete Restaurant Solution** – From browsing menu to order fulfillment
 - ✅ **Real-time Data Sync** – Powered by Supabase PostgreSQL
@@ -15,9 +15,9 @@
 
 ---
 
-## ✨ Feature Rich Experience
+ ✨ Feature Rich Experience
 
-### 🍔 Customer Features
+ 🍔 Customer Features
 
 | Feature | Description |
 | :--- | :--- |
@@ -29,7 +29,7 @@
 | **Instant Feedback** | Toast notifications for all user actions |
 | **Contact & Support** | Integrated messaging system with admin visibility |
 
-### 👨‍💼 Admin Features
+ 👨‍💼 Admin Features
 
 | Feature | Description |
 | :--- | :--- |
@@ -42,9 +42,9 @@
 
 ---
 
-## 🛠️ Technology Stack
+ 🛠️ Technology Stack
 
-### Frontend Architecture
+ Frontend Architecture
 
 
 graph LR
@@ -87,7 +87,7 @@ graph TD
 | **Supabase** | 2.38.0 | PostgreSQL + Auth |
 | **dotenv** | 16.3.1 | Environment management |
 
-### Database Schema (5 Tables)
+ Database Schema (5 Tables)
 
 
 -- ER Diagram (simplified)
@@ -170,7 +170,7 @@ User → Register Form → Supabase Auth
     Redirect → Dashboard
 
 
-### Login Process
+ Login Process
 
 
 User → Login Form → Express API
@@ -186,7 +186,7 @@ User → Login Form → Express API
 
 
 
-## 🌐 API Reference
+ 🌐 API Reference
 
 ### Authentication Endpoints
 
@@ -195,7 +195,7 @@ User → Login Form → Express API
 | `POST` | `/api/register` | Public | Create new account |
 | `POST` | `/api/login` | Public | Authenticate user |
 
-### Core Data Endpoints
+ Core Data Endpoints
 
 | Method | Endpoint | Auth | Description |
 | :--- | :--- | :--- | :--- |
@@ -208,7 +208,7 @@ User → Login Form → Express API
 | `POST` | `/api/contact` | Public | Send contact message |
 | `GET` | `/api/contact` | Admin | Get all messages |
 
-### Admin Management Endpoints
+ Admin Management Endpoints
 
 | Method | Endpoint | Auth | Description |
 | :--- | :--- | :--- | :--- |
@@ -221,9 +221,9 @@ User → Login Form → Express API
 
 ---
 
-## 🚀 Quick Start
+ 🚀 Quick Start
 
-### Prerequisites
+ Prerequisites
 
 Node.js >= 18.x
 npm >= 9.x
@@ -231,35 +231,35 @@ Supabase Account (Free Tier)
 Git
 
 
-### Installation (5 Minutes)
+ Installation (5 Minutes)
 
 
-# 1. Clone repository
+ 1. Clone repository
 git clone https://github.com/aqeelkhaliq/Full-Stack-Flamebite.git
 cd Full-Stack-Flamebite
 
-# 2. Install backend dependencies
+ 2. Install backend dependencies
 cd backend
 npm install
 
-# 3. Configure environment
+ 3. Configure environment
 cp .env.example .env
-# Edit .env with your Supabase credentials
+ Edit .env with your Supabase credentials
 
-# 4. Initialize database
-# Run schema.sql in Supabase SQL Editor
+ 4. Initialize database
+ Run schema.sql in Supabase SQL Editor
 
-# 5. Start server
+ 5. Start server
 node server.js
 
-# 6. Open application
-# http://localhost:5000/pages/index.html
+ 6. Open application
+ http://localhost:5000/pages/index.html
 
 
-### Environment Configuration
+ Environment Configuration
 
 env
-# .env file
+ .env file
 PORT=5000
 SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIs...
@@ -269,16 +269,16 @@ JWT_SECRET=your-secret-key-2026
 
 ---
 
-## 📊 Database Setup
+ 📊 Database Setup
 
-### Supabase Configuration
+ Supabase Configuration
 
 1. **Create Project** – New Supabase project
 2. **Run Schema** – Execute `schema.sql` in SQL Editor
 3. **Enable Auth** – Email/Password (disable email confirmation for testing)
 4. **Get Keys** – Settings → API → Copy credentials
 
-### Key Tables
+ Key Tables
 
 | Table | Purpose | RLS |
 | :--- | :--- | :--- |
@@ -290,7 +290,7 @@ JWT_SECRET=your-secret-key-2026
 
 ---
 
-## 🔒 Security Features
+ 🔒 Security Features
 
 - ✅ **JWT Authentication** – Stateless, secure token-based auth
 - ✅ **Row Level Security (RLS)** – Database-level access control
@@ -302,7 +302,7 @@ JWT_SECRET=your-secret-key-2026
 
 ---
 
-## 📱 Responsive Design
+ 📱 Responsive Design
 
 | Device | Breakpoint | Features |
 | :--- | :--- | :--- |
@@ -314,9 +314,9 @@ JWT_SECRET=your-secret-key-2026
 
 
 
-## 🧪 Testing Credentials
+ 🧪 Testing Credentials
 
-### Admin Access
+ Admin Access
 
 
 📧 Email: test@gmail.com
@@ -326,15 +326,15 @@ JWT_SECRET=your-secret-key-2026
 
 ### User Access
 
-```text
-📧 Email:habibkhaliqgmail.com
+text
+📧 Email:habibkhaliq@gmail.com
 🔑 Password: 12345678
 👤 Role: user
 `
 
 
 
-## 📈 Performance Optimizations
+ 📈 Performance Optimizations
 
 - ✅ **Lazy Loading** – Images load on scroll
 - ✅ **Minified Assets** – CSS & JS optimization
@@ -345,7 +345,7 @@ JWT_SECRET=your-secret-key-2026
 
 ---
 
-## 🎯 Future Roadmap
+🎯 Future Roadmap
 
 ### Phase 2 (Coming Soon)
 
@@ -354,7 +354,7 @@ JWT_SECRET=your-secret-key-2026
 - [ ] **Order Tracking** – Real-time status updates
 - [ ] **Reviews & Ratings** – Customer feedback system
 
-### Phase 3 (Planned)
+ Phase 3 (Planned)
 
 - [ ] **Mobile App** – React Native
 - [ ] **Push Notifications** – Order updates
@@ -364,15 +364,15 @@ JWT_SECRET=your-secret-key-2026
 ---
 Photos:
 
-## 📄 License
+ 📄 License
 
 MIT License – See [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👨‍💻 Developer
+ 👨‍💻 Developer
 
-### Aqeel Khaliq
+ Aqeel Khaliq
 
 - 🐙 GitHub: [@aqeelkhaliq](https://github.com/aqeelkhaliq)
 - 📧 Email: aqeel.khalique2584@gmail.com
@@ -380,7 +380,7 @@ MIT License – See [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+ 🙏 Acknowledgments
 
 Special thanks to:
 
@@ -391,7 +391,7 @@ Special thanks to:
 
 ---
 
-## 📊 Project Metrics
+ 📊 Project Metrics
 
 | Metric | Value |
 | :--- | :--- |
@@ -405,7 +405,7 @@ Special thanks to:
 
 ---
 
-## ⭐ Show Your Support
+ ⭐ Show Your Support
 
 If you found this project helpful, please consider:
 
@@ -416,7 +416,7 @@ If you found this project helpful, please consider:
 
 ---
 
-## 📞 Contact & Support
+ 📞 Contact & Support
 
 For queries, support, or collaboration:
 
@@ -430,7 +430,7 @@ For queries, support, or collaboration:
 
 ---
 
-### 🎯 Quick Links
+ 🎯 Quick Links
 
 | Resource | URL |
 | :--- | :--- |
