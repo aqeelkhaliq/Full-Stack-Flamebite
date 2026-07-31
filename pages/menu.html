@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlameBite | Menu</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="FlameBite Logo" />
+                <h2>FlameBite</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Cart</span>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MENU BANNER ===== -->
+    <section class="menu-banner">
+        <div class="banner-content">
+            <h1>Our Menu</h1>
+            <p>Discover freshly prepared burgers, pizzas, fries and refreshing drinks made with quality ingredients.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Menu</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEARCH ===== -->
+    <section class="search-food">
+        <h2>Find Your Favourite Meal</h2>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search food..." />
+        </div>
+    </section>
+
+    <!-- ===== CATEGORY FILTER ===== -->
+    <section class="menu-filter">
+        <div class="section-heading">
+            <h2>Browse By Category</h2>
+            <p>Choose your favourite category and discover delicious meals.</p>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">
+                <i class="fa-solid fa-utensils"></i> All
+            </button>
+            <button class="filter-btn" data-category="burger"> Burgers</button>
+            <button class="filter-btn" data-category="pizza">Pizza</button>
+            <button class="filter-btn" data-category="fries">Fries</button>
+            <button class="filter-btn" data-category="drinks">Drinks</button>
+            <button class="filter-btn" data-category="sides">Sides</button>
+        </div>
+    </section>
+
+    <!-- ===== SORT ===== -->
+    <section class="sort-section">
+        <div class="sort-box">
+            <label>Sort By</label>
+            <select id="sortSelect">
+                <option value="default">Default</option>
+                <option value="popular">Most Popular</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+    </section>
+
+  
+
+    <section class="food-cards-section">
+        <div class="section-title">
+            <h2>Explore Our <span>Menu</span></h2>
+            <p>Freshly prepared with love, served with pride — every bite tells a story.</p>
+        </div>
+
+        <div class="food-grid">
+
+            <!-- Card 1 — Double Beef Burger (Popular) -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/burger1.avif" alt="Double Beef Burger" loading="lazy" />
+                    <span class="food-badge">Popular</span>
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Double Beef Burger</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                            <span class="rating-count">(284)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Juicy grilled beef patties with melted cheddar, crisp lettuce, and our signature FlameBite sauce.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 850</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 — Pepperoni Pizza (Popular) -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/pizza/pizza1.avif" alt="Pepperoni Pizza" loading="lazy" />
+                    <span class="food-badge">Popular</span>
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Pepperoni Pizza</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                            <span class="rating-count">(196)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Classic pepperoni, mozzarella cheese, and zesty tomato sauce on a crispy hand-tossed crust.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 1,450</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 — Loaded Fries -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/fries/fries1.avif" alt="Loaded Fries" loading="lazy" />
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Loaded Fries</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                            <span class="rating-count">(142)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Crispy golden fries smothered in melted cheese sauce, topped with bacon bits and spring onions.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 520</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 — Chicken Zinger Burger -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/burger-g1.avif" alt="Chicken Zinger Burger" loading="lazy" />
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Chicken Zinger</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.6</span>
+                            <span class="rating-count">(108)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Crispy fried chicken fillet with spicy mayo, fresh lettuce, and toasted sesame buns.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 750</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 — Margherita Pizza -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/pizza/pizza-g1.avif" alt="Margherita Pizza" loading="lazy" />
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Margherita Pizza</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                            <span class="rating-count">(163)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Fresh mozzarella, basil leaves, and rich tomato sauce on a thin, crispy Italian-style crust.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 1,200</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 — Strawberry Shake -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/drinks/drink-g1.avif" alt="Strawberry Shake" loading="lazy" />
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Strawberry Shake</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5</span>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Creamy strawberry milkshake made with real strawberries and topped with whipped cream.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 350</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 — Chicken Wings (Popular) -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/slides/chicken-g1.avif" alt="Chicken Wings" loading="lazy" />
+                    <span class="food-badge">Popular</span>
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Chicken Wings</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                            <span class="rating-count">(211)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Crispy fried chicken wings tossed in spicy buffalo sauce, served with cooling ranch dip.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 720</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 — Mango Juice -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../assets/images/drinks/drink.png" alt="Mango Juice" loading="lazy" />
+                    <button class="fav-btn" aria-label="Add to favourites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-card-top">
+                        <h3>Mango Juice</h3>
+                        <div class="food-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.4</span>
+                            <span class="rating-count">(76)</span>
+                        </div>
+                    </div>
+                    <p class="food-desc">
+                        Freshly squeezed mango juice — refreshing, sweet, and perfect for a hot day.
+                    </p>
+                    <div class="food-card-bottom">
+                        <span class="food-price">Rs. 250</span>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>FlameBite</h2>
+                <p>Serving freshly prepared burgers, pizzas, fries and drinks with quality ingredients and exceptional taste.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@flamebite.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Abbottabad, Pakistan</p>
+            </div>
+            <div class="footer-box">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday</p>
+                <span>10:00 AM - 11:00 PM</span><br><br>
+                <p>Saturday - Sunday</p>
+                <span>09:00 AM - 12:00 AM</span>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>© 2026 FlameBite. All Rights Reserved.</p>
+        </div>
+    </footer><!-- ===== TOAST ===== -->
+<div id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Item Added</span>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="../js/api.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/menu.js"></script>
+</html>

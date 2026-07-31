@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlameBite | Fast Food Restaurant</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+
+<!-- nav bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="FlameBite Logo" />
+                <h2>FlameBite</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Cart</span>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- hero section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Taste the <span>Flame</span></h1>
+            <p>
+                Enjoy delicious burgers, crispy fries, cheesy pizzas and refreshing drinks,
+                freshly prepared and delivered straight to your doorstep.
+            </p>
+            <div class="hero-btns">
+                <a href="menu.html" class="btn primary">Order Now</a>
+                <a href="menu.html" class="btn secondary">Explore Menu</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="../assets/images/hero-burger.png" alt="Burger" />
+        </div>
+    </section>
+<!-- about  -->
+    <section class="about">
+        <h2>Why Choose FlameBite?</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>We deliver fresh and hot meals to your doorstep in the shortest time possible.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-burger"></i>
+                <h3>Fresh Ingredients</h3>
+                <p>Every meal is prepared using fresh ingredients to ensure the best taste and quality.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-star"></i>
+                <h3>Best Quality</h3>
+                <p>We focus on quality, great taste, and customer satisfaction in every order.</p>
+            </div>
+        </div>
+    </section>
+<!-- categories -->
+    <section class="categories">
+        <div class="section-title">
+            <h2>Explore Our Menu</h2>
+            <p>Freshly prepared meals made with quality ingredients for every taste.</p>
+        </div>
+        <div class="category-list">
+            <div class="category">
+                <img src="../assets/images/hero-burger.png" alt="Burger">
+                <h3>Burgers</h3>
+                <p>Juicy grilled burgers made with fresh ingredients.</p>
+                <a href="menu.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="category">
+                <img src="../assets/images/pizza/pizza.png" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Hot cheesy pizzas baked with delicious toppings.</p>
+                <a href="menu.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="category">
+                <img src="../assets/images/fries/fries.png" alt="Fries">
+                <h3>Fries</h3>
+                <p>Crispy golden fries served with tasty sauces.</p>
+                <a href="menu.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="category">
+                <img src="../assets/images/drinks/drink.png" alt="Drink">
+                <h3>Drinks</h3>
+                <p>Refreshing cold beverages to complete your meal.</p>
+                <a href="menu.html">Explore <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+<!-- features -->
+    <section class="features">
+        <div class="feature-title">
+            <h2>Featured Menu</h2>
+            <p>Discover our most popular meals prepared fresh every day.</p>
+        </div>
+        <div class="food-list">
+
+            <!-- Food 1 -->
+            <div class="food-card"
+                 data-id="1"
+                 data-name="Double Beef Burger"
+                 data-price="850"
+                 data-image="../assets/images/burger1.avif"
+                 data-category="Burger">
+                <div class="food1">
+                    <img src="../assets/images/burger1.avif" alt="Burger">
+                </div>
+                <div class="food-info">
+                    <div class="food-top">
+                        <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span class="price">PKR 850</span>
+                    </div>
+                    <h3>Double Beef Burger</h3>
+                    <p>Juicy beef patty with melted cheese, lettuce and our signature sauce.</p>
+                    <div class="food-bottom">
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food 2 -->
+            <div class="food-card"
+                 data-id="2"
+                 data-name="Pepperoni Pizza"
+                 data-price="1450"
+                 data-image="../assets/images/pizza/pizza1.avif"
+                 data-category="Pizza">
+                <div class="food1">
+                    <img src="../assets/images/pizza/pizza1.avif" alt="Pizza">
+                </div>
+                <div class="food-info">
+                    <div class="food-top">
+                        <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        <span class="price">PKR 1450</span>
+                    </div>
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Freshly baked pizza topped with pepperoni and extra cheese.</p>
+                    <div class="food-bottom">
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food 3 -->
+            <div class="food-card"
+                 data-id="3"
+                 data-name="Loaded Fries"
+                 data-price="450"
+                 data-image="../assets/images/fries/fries1.avif"
+                 data-category="Fries">
+                <div class="food1">
+                    <img src="../assets/images/fries/fries1.avif" alt="Fries">
+                </div>
+                <div class="food-info">
+                    <div class="food-top">
+                        <span class="rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                        <span class="price">PKR 450</span>
+                    </div>
+                    <h3>Loaded Fries</h3>
+                    <p>Crispy fries topped with cheese sauce and spicy seasoning.</p>
+                    <div class="food-bottom">
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+ <!-- specail foffer -->
+    <section class="offer">
+        <div class="offer-text">
+            <span class="offer-tag">Today's Special</span>
+            <h2>Double Zinger Burger Combo</h2>
+            <p>Enjoy a crispy double zinger burger served with hot fries and a refreshing cold drink.
+            Freshly prepared and available for a limited time only.</p>
+            <h3>Only PKR 999</h3>
+            <a href="menu.html" class="btn primary">Order Now</a>
+        </div>
+        <div class="offer-image">
+            <img src="../assets/images/burger combo.avif" alt="Burger Combo">
+        </div>
+    </section>
+
+<!-- reviews -->
+    <section class="reviews">
+        <div class="review-title">
+            <h2>What Our Customers Say</h2>
+            <p>Loved by hundreds of happy customers across Pakistan.</p>
+        </div>
+        <div class="review-list">
+            <div class="review-card">
+                <img src="../assets/images/ahmed.avif" alt="Ahmed">
+                <h3>Ahmed Khan</h3>
+                <span>Lahore</span>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"The burgers were fresh, juicy and delicious. Delivery was also very fast."</p>
+            </div>
+            <div class="review-card">
+                <img src="../assets/images/sara.avif" alt="Sara">
+                <h3>Sara Ali</h3>
+                <span>Islamabad</span>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Pizza was hot and cheesy. I will definitely order again."</p>
+            </div>
+            <div class="review-card">
+                <img src="../assets/images/ali.avif" alt="Ali">
+                <h3>Ali Hassan</h3>
+                <span>Karachi</span>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Excellent quality food with reasonable prices. Highly recommended."</p>
+            </div>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="stat">
+            <i class="fa-solid fa-users"></i>
+            <h2>5000+</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-burger"></i>
+            <h2>120+</h2>
+            <p>Menu Items</p>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-utensils"></i>
+            <h2>15+</h2>
+            <p>Professional Chefs</p>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-star"></i>
+            <h2>4.9</h2>
+            <p>Customer Rating</p>
+        </div>
+    </section>
+
+ <!-- chefs -->
+    <section class="chefs">
+        <div class="section-title">
+            <h2>Meet Our Expert Chefs</h2>
+            <p>Our talented chefs prepare every meal with passion, creativity and the finest ingredients.</p>
+        </div>
+        <div class="chef-list">
+            <div class="chef-card">
+                <img src="../assets/images/Rasmuk munk.avif" alt="Head Chef">
+                <h3>Rasmuk Munk</h3>
+                <span>Head Chef</span>
+                <p>Over 40 years of experience creating delicious gourmet burgers and signature meals.</p>
+                <div class="chef-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="chef-card">
+                <img src="../assets/images/Alan ducasse.avif" alt="Pizza Chef">
+                <h3>Alian Ducasse</h3>
+                <span>Pizza Chef</span>
+                <p>Passionate about authentic Italian pizzas baked with fresh ingredients.</p>
+                <div class="chef-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="chef-card">
+                <img src="../assets/images/Gordon Ramsay.jpg" alt="Burger Chef">
+                <h3>Gordon Ramsay</h3>
+                <span>Burger Chef</span>
+                <p>Famous for creating juicy burgers loved by thousands of customers.</p>
+                <div class="chef-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- gallery -->
+    <section class="gallery">
+        <div class="section-title">
+            <h2>Our Food Gallery</h2>
+            <p>Every meal is freshly prepared with premium ingredients and unforgettable flavors.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="../assets/images/burger-g1.avif" alt="Burger"></div>
+            <div class="gallery-item"><img src="../assets/images/pizza/pizza-g1.avif" alt="Pizza"></div>
+            <div class="gallery-item"><img src="../assets/images/fries/fries-g1.avif" alt="Fries"></div>
+            <div class="gallery-item"><img src="../assets/images/sandwich-g1.avif" alt="Sandwich"></div>
+            <div class="gallery-item"><img src="../assets/images/drinks/drink-g1.avif" alt="Drink"></div>
+            <div class="gallery-item"><img src="../assets/images/slides/chicken-g1.avif" alt="Chicken"></div>
+        </div>
+    </section>
+<!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>FlameBite</h2>
+                <p>Serving freshly prepared burgers, pizzas, fries and drinks with quality ingredients and exceptional taste.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@flamebite.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Abbottabad, Pakistan</p>
+            </div>
+            <div class="footer-box">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday</p>
+                <span>10:00 AM - 11:00 PM</span><br><br>
+                <p>Saturday - Sunday</p>
+                <span>09:00 AM - 12:00 AM</span>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>© 2026 FlameBite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- for adding give notification -->
+    <div id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Item Added Successfully</span>
+    </div>
+<!-- ===== TOAST ===== -->
+<div id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Item Added</span>
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/home.js"></script>
+</body>
+</html>

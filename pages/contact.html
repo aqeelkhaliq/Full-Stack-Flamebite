@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlameBite | Contact Us</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="FlameBite Logo" />
+                <h2>FlameBite</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Cart</span>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== CONTACT BANNER ===== -->
+    <section class="contact-banner">
+        <div class="banner-content">
+            <h1>Get in Touch</h1>
+            <p>Have questions, feedback, or just want to say hello? We'd love to hear from you!</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT INFO CARDS ===== -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>+92 300 1234567</p>
+                    <span>Mon–Sat, 10AM–11PM</span>
+                </div>
+                <div class="info-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>info@flamebite.com</p>
+                    <span>We reply within 24hrs</span>
+                </div>
+                <div class="info-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Location</h3>
+                    <p>Main Street, Abbottabad</p>
+                    <span>Pakistan</span>
+                </div>
+                <div class="info-card">
+                    <div class="icon-wrapper"><i class="fa-regular fa-clock"></i></div>
+                    <h3>Hours</h3>
+                    <p>Mon–Fri: 10AM – 11PM</p>
+                    <span>Sat–Sun: 09AM – 12AM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + MAP ===== -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <!-- Left: Form -->
+                <div class="form-content">
+                    <div class="section-label">📬 Send a Message</div>
+                    <h2>We'd Love to Hear From You</h2>
+                    <p>Whether you have a question about our menu, delivery, or just want to give feedback — we're all ears.</p>
+
+                    <!-- ✅ FIX: Added id="contactForm" and ids to inputs -->
+                    <form id="contactForm" class="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="contactName" placeholder="Your Full Name" required />
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="contactEmail" placeholder="Your Email Address" required />
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="contactSubject" placeholder="Subject" />
+                        </div>
+                        <div class="input-group">
+                            <textarea id="contactMessage" rows="5" placeholder="Your Message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Map -->
+                <div class="map-content">
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.508857454202!2d73.15683047507804!3d34.14979247316338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfd8291d7f7c7d%3A0x8b5f7e7d7c7d7c7d!2sAbbottabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-label"> FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about FlameBite.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item"><h4>What are your opening hours?</h4><p>We are open Monday to Friday from 10:00 AM to 11:00 PM, and Saturday to Sunday from 09:00 AM to 12:00 AM.</p></div>
+                <div class="faq-item"><h4>Do you offer home delivery?</h4><p>Yes! We offer fast and reliable home delivery across Abbottabad. You can order directly through our website or by calling us.</p></div>
+                <div class="faq-item"><h4>Can I customize my order?</h4><p>Absolutely! You can customize your burgers, pizzas, and sandwiches by adding or removing ingredients according to your taste.</p></div>
+                <div class="faq-item"><h4>Do you cater for events?</h4><p>Yes, we provide catering services for parties, corporate events, and private gatherings. Contact us for a custom quote.</p></div>
+                <div class="faq-item"><h4>Is there a loyalty program?</h4><p>Yes, we offer a loyalty program where you earn points on every order. Redeem them for discounts and free meals!</p></div>
+                <div class="faq-item"><h4>What payment methods do you accept?</h4><p>We accept cash on delivery, credit/debit cards, and all major mobile payment systems (JazzCash, EasyPaisa).</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOCIAL + NEWSLETTER ===== -->
+    <section class="connect-section">
+        <div class="container">
+            <div class="connect-wrapper">
+                <div class="social-column">
+                    <h3>Follow the Flame</h3>
+                    <p>Stay connected with us on social media for the latest updates, offers, and behind-the-scenes.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="newsletter-column">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest news, exclusive offers, and delicious recipes straight to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required />
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>FlameBite</h2>
+                <p>Serving freshly prepared burgers, pizzas, fries and drinks with quality ingredients and exceptional taste.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@flamebite.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Abbottabad, Pakistan</p>
+            </div>
+            <div class="footer-box">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday</p>
+                <span>10:00 AM - 11:00 PM</span><br /><br />
+                <p>Saturday - Sunday</p>
+                <span>09:00 AM - 12:00 AM</span>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>© 2026 FlameBite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== TOAST ===== -->
+    <div id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Item Added</span>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="../js/api.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

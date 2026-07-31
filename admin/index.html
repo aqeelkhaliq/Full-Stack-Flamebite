@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlameBite | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="admin-wrapper">
+      <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+          <img src="../assets/images/logo.png" alt="FlameBite" />
+          <h2>FlameBite</h2>
+          <span class="admin-badge">Admin</span>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html" class="active" data-page="dashboard"
+                ><i class="fa-solid fa-gauge-high"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="#" data-page="users"
+                ><i class="fa-solid fa-users"></i> Users</a
+              >
+            </li>
+            <li>
+              <a href="#" data-page="menu"
+                ><i class="fa-solid fa-burger"></i> Menu</a
+              >
+            </li>
+            <li>
+              <a href="#" data-page="orders"
+                ><i class="fa-solid fa-receipt"></i> Orders</a
+              >
+            </li>
+            <li>
+              <a href="#" data-page="messages"
+                ><i class="fa-solid fa-envelope"></i> Messages</a
+              >
+            </li>
+            <li>
+              <a href="#" id="logoutBtn"
+                ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="admin-main">
+        <header class="admin-header">
+          <h1>Dashboard</h1>
+          <div class="admin-profile">
+            <span id="adminName">Admin</span>
+            <i
+              class="fa-solid fa-user-circle"
+              style="font-size: 40px; color: #999"
+            ></i>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <div class="stat-card">
+            <i class="fa-solid fa-users"></i>
+            <div>
+              <h3 id="totalUsers">0</h3>
+              <p>Total Users</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-burger"></i>
+            <div>
+              <h3 id="totalMenu">0</h3>
+              <p>Menu Items</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-receipt"></i>
+            <div>
+              <h3 id="totalOrders">0</h3>
+              <p>Total Orders</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-wallet"></i>
+            <div>
+              <h3 id="totalRevenue">Rs. 0</h3>
+              <p>Revenue</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-content">
+          <div id="pageContent"></div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast">
+      <i class="fa-solid fa-circle-check"></i
+      ><span id="toast-message">Item Added</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

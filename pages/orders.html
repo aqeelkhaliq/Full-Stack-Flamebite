@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlameBite | My Orders</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/orders.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="FlameBite Logo" />
+                <h2>FlameBite</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Cart</span>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== ORDERS BANNER ===== -->
+    <section class="orders-banner">
+        <div class="banner-content">
+            <h1>My Orders</h1>
+            <p>View your complete order history.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Orders</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ORDERS LIST ===== -->
+    <section class="orders-section">
+        <div class="container">
+            <div class="orders-header">
+                <h2>Order History</h2>
+                <span id="orderCount">0 orders</span>
+            </div>
+            <div id="ordersList">
+                <!-- Orders will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>FlameBite</h2>
+                <p>Serving freshly prepared burgers, pizzas, fries and drinks with quality ingredients and exceptional taste.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@flamebite.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Abbottabad, Pakistan</p>
+            </div>
+            <div class="footer-box">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday</p>
+                <span>10:00 AM - 11:00 PM</span><br><br>
+                <p>Saturday - Sunday</p>
+                <span>09:00 AM - 12:00 AM</span>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>© 2026 FlameBite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== TOAST ===== -->
+    <div id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Item Added</span>
+    </div>
+
+   
+    <!-- ===== SCRIPTS ===== -->
+<script src="../js/api.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/orders.js"></script>
+<script src="../js/logout.js"></script>
+</body>
+</html>

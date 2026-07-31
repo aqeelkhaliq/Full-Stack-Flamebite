@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlameBite | Settings</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/settings.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="FlameBite Logo" />
+                <h2>FlameBite</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Cart</span>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== SETTINGS BANNER ===== -->
+    <section class="settings-banner">
+        <div class="banner-content">
+            <h1>Settings</h1>
+            <p>Manage your account preferences</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Settings</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SETTINGS SECTION ===== -->
+    <section class="settings-section">
+        <div class="container">
+            <div class="settings-wrapper">
+
+                <!-- Sidebar -->
+                <aside class="settings-sidebar">
+                    <nav class="settings-nav">
+                        <ul>
+                            <li><a href="#" class="active" data-tab="profile"><i class="fa-solid fa-user"></i> Profile</a></li>
+                            <li><a href="#" data-tab="preferences"><i class="fa-solid fa-sliders"></i> Preferences</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Content -->
+                <main class="settings-content">
+
+                    <!-- Profile Tab -->
+                    <div class="settings-tab active" id="tab-profile">
+                        <h2>Profile Settings</h2>
+                        <p>Update your profile information</p>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Display Name</h4>
+                                <p>Your public display name</p>
+                            </div>
+                            <div class="setting-control">
+                                <input type="text" id="displayName" placeholder="Enter display name" />
+                                <button class="setting-btn" onclick="updateDisplayName()">Update</button>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Email</h4>
+                                <p>Your email address (read only)</p>
+                            </div>
+                            <div class="setting-control">
+                                <input type="email" id="displayEmail" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Preferences Tab -->
+                    <div class="settings-tab" id="tab-preferences">
+                        <h2>Preferences</h2>
+                        <p>Customize your experience</p>
+
+                        <div class="setting-item toggle-item">
+                            <div class="setting-info">
+                                <h4>Dark Mode</h4>
+                                <p>Switch between light and dark theme</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="darkModeToggle" />
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Language</h4>
+                                <p>Choose your preferred language</p>
+                            </div>
+                            <div class="setting-control">
+                                <select id="languageSelect">
+                                    <option value="en">English</option>
+                                    <option value="ur">Urdu</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>FlameBite</h2>
+                <p>Serving freshly prepared burgers, pizzas, fries and drinks.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@flamebite.com</p>
+            </div>
+            <div class="footer-box">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 10AM – 11PM</p>
+                <p>Sat-Sun: 09AM – 12AM</p>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p>© 2026 FlameBite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== TOAST ===== -->
+    <div id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Item Added</span>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="../js/api.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/settings.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+</html>

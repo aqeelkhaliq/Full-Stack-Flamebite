@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlameBite | Contact Messages</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <div class="admin-wrapper">
+
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-brand">
+                <img src="../assets/images/logo.png" alt="FlameBite" />
+                <h2>FlameBite</h2>
+                <span class="admin-badge">Admin</span>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-gauge-high"></i> Dashboard</a></li>
+                    <li><a href="menu.html"><i class="fa-solid fa-burger"></i> Menu</a></li>
+                    <li><a href="orders.html"><i class="fa-solid fa-receipt"></i> Orders</a></li>
+                    <li><a href="users.html"><i class="fa-solid fa-users"></i> Users</a></li>
+                    <li><a href="messages.html" class="active"><i class="fa-solid fa-envelope"></i> Messages</a></li>
+                    <li><a href="#" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+
+            <header class="admin-header">
+                <h1>Contact Messages</h1>
+                <div class="admin-profile">
+                    <span id="adminName">Admin</span>
+                    <i class="fa-solid fa-user-circle" style="font-size:40px;color:#999;"></i>
+                </div>
+            </header>
+
+            <section class="admin-content">
+                <div class="table-wrap">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="messagesTable">
+                            <tr><td colspan="8" style="text-align:center;padding:40px;color:#999;">Loading messages...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="color:#999;font-size:14px;margin-top:10px;">
+                     Messages are stored in localStorage. For production, connect to a database.
+                </p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Toast -->
+    <div id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Item Added</span>
+    </div>
+
+    <!--  SCRIPTS - ONLY the necessary ones -->
+    <script src="../js/api.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin-messages.js"></script>
+</body>
+</html>

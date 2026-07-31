@@ -1,0 +1,131 @@
+.orders-banner {
+  height: 250px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../assets/images/banner.avif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.orders-banner h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.orders-banner p {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.orders-banner .breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.orders-banner .breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+.orders-banner .breadcrumb a:hover {
+  color: var(--secondary);
+}
+.orders-banner .breadcrumb span {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.orders-section {
+  padding: 60px 8%;
+  background: var(--background);
+  min-height: 50vh;
+}
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.orders-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.orders-header span {
+  color: #999;
+  font-size: 16px;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.order-header strong {
+  font-size: 16px;
+}
+.order-header .status {
+  padding: 4px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.status.pending {
+  background: rgba(255, 183, 3, 0.12);
+  color: #d4a000;
+}
+.status.preparing {
+  background: rgba(255, 183, 3, 0.12);
+  color: #d4a000;
+}
+.status.delivered {
+  background: rgba(42, 157, 143, 0.1);
+  color: #2a9d8f;
+}
+.status.cancelled {
+  background: rgba(230, 57, 70, 0.08);
+  color: var(--primary);
+}
+
+.order-items {
+  padding: 12px 0;
+}
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+.order-total {
+  text-align: right;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .orders-banner h1 {
+    font-size: 30px;
+  }
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .order-items {
+    font-size: 13px;
+  }
+}
