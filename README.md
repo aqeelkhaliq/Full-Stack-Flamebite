@@ -422,7 +422,7 @@ For queries, support, or collaboration:
 
 - 📧 **Email:** aqeel.khalique2584@gmail.com
 - 🐙 **GitHub:** [aqeelkhaliq](https://github.com/aqeelkhaliq)
-- 📱 **LinkedIn:** [linkedin.com/in/aqeel-khaliq-385a25382]
+- 📱 **LinkedIn:** linkedin.com/in/aqeel-khaliq-385a25382
 
 ---
 
